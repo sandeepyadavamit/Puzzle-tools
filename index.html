@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Puzzle Search Book Creator</title>
+    <title>Ultimate Puzzle Search Book Creator | Custom Educational Puzzles</title>
+    <meta name="description" content="Create custom word search, crossword, and other educational puzzles with Sandeep Yadav's Ultimate Puzzle Book Creator. Perfect for teachers and parents.">
+    <meta name="keywords" content="puzzle creator, word search maker, crossword generator, educational games, Sandeep Yadav">
+    <meta name="author" content="Sandeep Yadav">
+    
     <style>
         body {
             margin: 0;
@@ -91,6 +95,7 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            cursor: pointer;
         }
 
         .puzzle-type::before {
@@ -171,6 +176,13 @@
             color: #FF416C;
         }
 
+        /* Removes underline from links in puzzle-types */
+        .puzzle-types a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .puzzle-types {
                 grid-template-columns: 1fr;
@@ -206,14 +218,13 @@
         <div class="age-group">For All Age Groups</div>
         
         <div class="puzzle-types">
-    <a href="img-wordsearch.html">  <!-- Hyperlink added here -->
-        <div class="puzzle-type">
-            <div class="puzzle-number">1</div>
-            <div class="puzzle-name">Word Search Puzzles</div>
-            <i class="fas fa-search puzzle-icon"></i>
-        </div>
-    </a>
-</div>
+            <a href="img-wordsearch.html">
+                <div class="puzzle-type">
+                    <div class="puzzle-number">1</div>
+                    <div class="puzzle-name">Word Search Puzzles</div>
+                    <i class="fas fa-search puzzle-icon"></i>
+                </div>
+            </a>
             
             <div class="puzzle-type">
                 <div class="puzzle-number">2</div>
@@ -252,9 +263,9 @@
             </div>
         </div>
         
-       <div class="footer">
-    Created by <span class="creator">Sandeep Yadav</span> · © 2023 · All Rights Reserved
-</div>
+        <div class="footer">
+            Created by <span class="creator">Sandeep Yadav</span> · © 2023 · All Rights Reserved
+        </div>
     </div>
 </body>
 </html>
